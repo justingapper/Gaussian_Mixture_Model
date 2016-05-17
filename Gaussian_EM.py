@@ -50,6 +50,7 @@ def gaussianEM(data, clusters=3, iteration=5):
             mu = mu_new
             variance = variance_new
 
+
     return Pz, mu, variance
 """
 mail = np.random.normal( 170, 7, (1, 100) )
