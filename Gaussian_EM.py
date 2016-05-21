@@ -10,9 +10,12 @@ import numpy as np
 dat = np.genfromtxt('C:\Users\jgapper\Desktop\CSDS\CS530\Assignment4\iris.csv', delimiter=',')
 dat = dat[1:,0:4]
 
+
+
 def gaussianEM(data, clusters=3, iteration=5):
     P = np.ones( (clusters,1,4), dtype="float64" )
     P += 1.0 / clusters
+
 
     #sample_index = np.array( np.percentile(data, range(100/(clusters+1),100,100/(clusters+1))[:clusters]), dtype="int" ).reshape(clusters,1)
     #sample_index = np.array([[1],[2],[3], [4]])    
