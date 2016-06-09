@@ -10,8 +10,6 @@ import numpy as np
 dat = np.genfromtxt('C:\Users\jgapper\Desktop\CSDS\CS530\Assignment4\iris.csv', delimiter=',')
 dat = dat[1:,0:4]
 
-
-
 def gaussianEM(data, clusters=3, iteration=5):
     P = np.ones( (clusters,1,4), dtype="float64" )
     P += 1.0 / clusters
